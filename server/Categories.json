@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "65a58d9e061ad41ff9aa6543",
+        "CategoryName": "ירקות",
+        "CategoryId": "1",
+        "class": "veg"
+    },
+    {
+        "_id": "65a58d9e061ad41ff9aa6544",
+        "CategoryName": "גבינות",
+        "CategoryId": "2",
+        "class": "milk"
+    },
+    {
+        "_id": "65a58d9e061ad41ff9aa6545",
+        "CategoryName": "ניקיון",
+        "CategoryId": "3",
+        "class": "clean"
+    },
+    {
+        "_id": "65a58d9e061ad41ff9aa6546",
+        "CategoryName": "בשר ודגים",
+        "CategoryId": "4",
+        "class": "freez"
+    },
+    {
+        "_id": "65a58d9e061ad41ff9aa6547",
+        "CategoryName": "מאפים",
+        "CategoryId": "5",
+        "class": "wheat"
+    }
+]
