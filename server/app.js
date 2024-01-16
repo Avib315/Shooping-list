@@ -50,6 +50,7 @@ const addToOrderInfo = (obj)=> {
   
 app.post('/addOrder', async (req, res) => {
     try {
+let userAddId = "userDataNotSaved"
 
         const { fullName, address, email, arrOrder } = req.body;
         if(isConnectedToMongoDb){
@@ -61,10 +62,11 @@ app.post('/addOrder', async (req, res) => {
         });
 
         const savedOrder = await newOrder.save();
+            userAddId = savedOrder._id
         res.status(201).send({order: savedOrder,});
     }
     addToOrderInfo({
-        userID:savedOrder ? savedOrder._id : "",
+        userID:userAddId,
         arrOrder:arrOrder,
     })
     res.status(201).send(true)
