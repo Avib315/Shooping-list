@@ -12,12 +12,18 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-mongoose.connect(uri);
-mongoose.connection.on('connected', () => {
-    isConnectedToMongoDb = true
-    console.log('Connected to MongoDB');
-});
-
+const connectToDb = async ()=>{
+try {
+    mongoose.connect(uri);
+    mongoose.connection.on('connected', () => {
+        isConnectedToMongoDb = true
+        console.log('Connected to MongoDB');
+    });    
+} catch (error) {
+    console.log(error);
+}
+}
+// connectToDb()
 app.get('/getCategoryList', async (req, res) => {
     try {
         let categories = arrCategories; // במידה ואין הרשאה לכתובת מחשב לקבל נתונים ממונגו האפליקציה תמשיך לרוץ ויזואלית
