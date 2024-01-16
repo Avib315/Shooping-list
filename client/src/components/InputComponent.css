@@ -1,0 +1,85 @@
+:root{
+    --border-r:5px;
+}
+@media (min-width:0px) and (max-width:450px) {
+    input:not(:placeholder-shown)+.placeHolder,
+    .InputComponent:focus-within .placeHolder {
+      top: -40%;
+    }
+  }
+  
+  @media (min-width:451px) and (max-width:850px) {
+    input:not(:placeholder-shown)+.placeHolder,
+    .InputComponent:focus-within .placeHolder {
+      top: -20%;
+    }
+  }
+  
+  @media (max-width:2450px) and (min-width:851px) {
+    input:not(:placeholder-shown)+.placeHolder,
+    .InputComponent:focus-within .placeHolder {
+    top: -70%;
+    }
+}
+.InputComponent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-bottom: 2px solid #333;
+    display: flex;
+    box-sizing: border-box;
+    font-size: var(--small-font);
+    cursor: text;
+  }
+  .InputComponent p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 2%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 2%;
+    font-weight: 700;
+    background: #fff;
+    user-select: none;
+    opacity: .8;
+    transition: .5s;
+  }
+  
+  .InputComponent input {
+    box-sizing: border-box;
+    border-radius: var(--border-r);
+    padding: 0 2%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    font-weight: 700;
+  }
+  
+  .InputComponent input::placeholder {
+    visibility: hidden;
+  }
+  
+  .InputComponent input:focus {
+    outline: none;
+  }
+  
+  input:not(:placeholder-shown)+.placeHolder,
+  .InputComponent:focus-within .placeHolder {
+      font-size: var(--xs-font);
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  
+  .InputComponent:focus-within .placeHolder {
+    color: #5493f9;
+  }
+  
+  .InputComponent:focus-within {
+    border-bottom: 2px solid #5493f9;
+  }

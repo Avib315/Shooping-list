@@ -1,0 +1,62 @@
+@media (min-width:0px) and (max-width:450px) {
+  :root {
+    --xs-font: .48rem;
+    --small-font: .5rem;
+    --reg-font: .7rem;
+    --big-font: 1rem
+  }
+  .mainBody {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:451px) and (max-width:850px) {
+  :root {
+    --xs-font: .6rem;
+    --small-font: .7rem;
+    --reg-font: .8rem;
+    --big-font: 1.2rem
+  }
+  .mainBody {
+    width: 60%;
+  }
+}
+
+@media (max-width:2450px) and (min-width:851px) {
+  :root {
+    --xs-font: .75rem;
+    --small-font: .9rem;
+    --reg-font: 1rem;
+    --big-font: 1.5rem
+  }
+  .mainBody {
+    width: 30%;
+  }
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.mainBody {
+  margin: 5vh auto;
+  height: 80vh;
+}

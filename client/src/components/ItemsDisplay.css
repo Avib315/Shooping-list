@@ -1,0 +1,8 @@
+.ItemsDisplay{
+    overflow-y: auto;
+    max-height: 90%;
+}
+.ItemsDisplay .pItemList:nth-child(even){
+    background-color: rgba(102, 102, 102, 0.2)
+
+}

@@ -1,0 +1,140 @@
+
+.AddItems {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    margin-top: 0%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    min-width: 150px;
+    max-width: 450px;
+}
+
+.AddItems .containerAmonth{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--small-font) ;
+    font-weight: 900;
+}
+
+
+.AddItems .addNewItemInput{
+    width: 85%;
+    height: 8%;
+    min-width: 175px;
+    margin: 2%;
+    max-width: 300px;
+    min-height: 30px;
+}
+.AddItems .categorySelectContainer {
+    width: 97%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    min-width: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 345px;
+    padding: 2%;
+    border-radius: 10px;
+    border: 3px solid #333;
+    position: relative;
+    align-content: center;
+    box-sizing: border-box;
+    min-height: 100px;
+}
+.AddItems .categorySelectContainer h3{
+    margin-block: 0;
+    position: absolute;
+    top: -5%;
+    box-sizing: border-box;
+    padding: .2% 6%;
+    text-align: center;
+    background-color: #333;
+    font-weight: 900;
+    color: #333333;
+    color: #fff;
+    font-size: var(--small-font);
+}
+.AddItems .categoryBtnSelect{
+    transition: .2s;
+    width: 29%;
+    height: 35%;
+    margin: 2%;
+    position: relative;
+    background-position: center;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 4%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 2px 0 #333;
+    padding-inline:0 ;
+    padding-block:0 ;
+    font-size: var(--xs-font)
+    
+}
+.AddItems .veg_icon{
+    background-image: url(../images/category/vegtables-img.png);
+}
+.AddItems .milk_icon{
+    background-image: url(../images/category/milk-img.png);
+}
+.AddItems .clean_icon{ 
+    background-image: url(../images/category/clean-img.png);
+}
+.AddItems .freez_icon{
+    background-image: url(../images/category/meat-img.png);
+}
+.AddItems .wheat_icon{
+    background-image: url(../images/category/bakery-img.png);
+}
+
+.AddItems .categoryBtnSelect p{
+    position: absolute;
+    bottom: 0%;
+    padding: 0;
+    margin-block: 0;
+    font-weight: 800;
+    width: 100%;
+    background: #333;
+    border-radius: 0 0 2px 1px;
+    color: #fff;
+    border: 1px solid #333;
+    font-size: var(--xs-font);
+}
+.AddItems .selectedCategory{
+    transform: scale(1.08);
+    border:3px solid #333;
+    background-color: #5493f9;
+    box-shadow: 0 0 4px 0 #333;
+    font-size: var(--xs-font);
+}
+.AddItems .selectedCategory p{
+    color: #5493f9;
+}
+.AddItems .addNewItemBtn{
+    padding: 5px 0;
+    font-size: var(--xs-font);
+    background-color: #333;
+    color: #5493f9;
+    width: 15%;
+    max-width: 400px;
+    border: 2px solid #ffffff;
+    font-weight: 800;
+    min-width: 160px;
+    margin-top: 3%;
+    box-shadow: 0 0 5px 1px #404040;
+    border-radius: 4px;
+
+}
+.AddItems .addNewItemBtn:hover{
+    box-shadow: 0 0 9px 0 #404040;
+    
+}
+.AddItems .addNewItemBtn:active{
+    box-shadow: 0 0 4px 0 #404040;
+}
